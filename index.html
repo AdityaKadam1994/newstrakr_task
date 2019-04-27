@@ -148,7 +148,7 @@
 		var modal = document.getElementById('myModal');
 		var modal_content = document.getElementById('popup-content');
 		var winNav = window.navigator;
-		var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+		var isIEedge = winNav.userAgent.indexOf('Edge') > -1;
 		var isFirefox = winNav.userAgent.indexOf('Firefox') > -1;
 		var isSafari = winNav.userAgent.indexOf('Safari') > -1;
 		var isChromium = window.chrome;
@@ -177,13 +177,12 @@
 
 		
 		if (isChromium) {
+			
 			modal.setAttribute('class',"modal modal-right");
 			modal_content.setAttribute('class',"modal-content modal-content-right");
 		}
 		
-		if(isIEedge) {
-			modal_content.setAttribute('class',"modal-content ie-content");
-		}
+
 
 		if (isFirefox) {
 			modal.setAttribute('class',"modal modal-left");
@@ -193,6 +192,13 @@
 		if (isSafari) {
 			modal.setAttribute('class',"modal modal-right");
 			modal_content.setAttribute('class',"modal-content modal-content-right");
+		}
+
+		if(isIEedge) {
+			
+			
+			// modal.classList.remove("mystyle");
+			modal_content.setAttribute('class',"modal-content ie-content");
 		}
 
 
