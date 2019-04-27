@@ -226,6 +226,10 @@ body {
 	box-shadow: none;
 }
 
+.news-section .right-article img {
+	border: none;
+}
+
 .subtitle {
 	font-family: MontSerratBold;
 	font-size: 24px;
@@ -487,6 +491,7 @@ body {
 	.news-section .article {
 		padding: 0 15px 15px 15px;
 	}
+
 
 	.news-trackr-section {
 		padding: 0 15px 50px 15px;
