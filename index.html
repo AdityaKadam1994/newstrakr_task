@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NewsTrakr</title>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="landing-section">
+		<div class="navbar">
+			<div class="navbar-logo">
+				<img src="images/logo.png" alt="logo">
+			</div>
+			<div class="chrome-extension">
+				<img src="images/chrome-web-store-badge-w-border-v-2-340-x-96.png" alt="chrome store">
+			</div>
+		</div>
+		<div class="landing-content container">
+			<div class="content-wrapper landing-content-wrapper">
+				<h1 class="heading landing-heading">Breaking News, News Coverage, Current Events & More</h1>
+				<div class="cta-content">
+					<div class="cta-content-wrapper">
+						<p>Install NewsTrackr to access the latest local, national & world news directly on your New Tab, along with web search.</p>
+					</div>
+					<div class="button-wrapper">
+						<button id="cont-btn" type="button" class="button">Continue <img src="images/rectangle-14.png" alt="arrow"></button>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+
+
+		<div class="services container">
+			<div class="services-grid">
+				<img src="images/shape-6.png" alt="BusinessNews">
+				<p>Business News <span class="orange-arrow">>></span></p>
+			</div>
+			<div class="services-grid">
+				<img src="images/shape-9.png" alt="Politics">
+				<p>Politics <span class="orange-arrow">>></span></p>
+			</div>
+			<div class="services-grid">
+				<img src="images/shape-7.png" alt="Entertainment">
+				<p>Entertainment <span class="orange-arrow">>></span></p>
+			</div>
+			<div class="services-grid">
+				<img src="images/shape-13.png" alt="Sports">
+				<p>Sports <span class="orange-arrow">>></span></p>
+			</div>
+			<div class="services-grid">
+				<img src="images/shape-8.png" alt="Health">
+				<p>Health <span class="orange-arrow">>></span></p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="bookmark-section">
+		<div class="bookmark-wrapper container">
+			<div class="left-article article">
+				<img src="images/shape-15.png" alt="share">
+				<h2 class="article-head">Share or Bookmark News Articles</h2>
+				<p class="article-description">With infinite news reports released daily, you’re bound to miss important information. For when you don’t have the time to read full articles, NewsTrackr allows you to bookmark articles you would want to read at leisure.. You can also share articles online.</p>
+				<button type="button" class="button">Continue <img src="images/rectangle-14_4.png" alt="arrow"></button>
+			</div>
+			<div class="right-article article">
+				<article class="card">
+				  <img class="image news-img" src="images/screen-shot-2018-10-31-at-3-06-36-pm.png" alt="article-img" />
+				 
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="news-section">
+		<div class="bookmark-wrapper container">
+			<div class="left-article article">
+				<article class="card">
+				  <img class="image news-img" src="images/shutterstock-144911782.png" alt="news_img" />
+				  <header class="header">
+				    <h2 class="subtitle">Watch <br>News Coverage</h2>
+				    
+				  </header>
+				  <section class="content">
+				    Want to catch up on world events? Stay updated stories from across the globe. By adding <span class="black-txt">NewsTrackr</span> to your New Tab, you can stream live news stories and watch news videos conveniently
+				  </section>
+				  <button type="button" class="button">Continue <img  src="images/rectangle-14_4.png" alt="arrow"></button>
+				</article>
+			</div>
+			<div class="right-article article">
+				<article class="card">
+				  <img class="image news-img" src="images/shutterstock-464351282.png" alt="news_img" />
+				  <header class="header">
+				    <h2 class="subtitle">Personalized News <br>Recommendations</h2>
+				    
+				  </header>
+				  <section class="content">
+				   Interested in political news but not entertainment news? <span class="black-txt">NewsTrackr</span> traitors a unique and personalized newsfeed, based on your interests and preferences. Discover quality content from around the web.
+				  </section>
+				  <button type="button" class="button">Continue <img src="images/rectangle-14_4.png" alt="arrow"></button>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="news-trackr-section">
+		<div class="newstrak-wrapper container">
+			<img src="images/shape-17.png" alt="news-icon">
+			<h1 class="main-heading">Add NewsTrackr To Your New Tab Now!</h1>
+			<p class="description">Free installation.</p>
+			<p class="description">No settings or customizations required.</p>
+			<div class="button-wrapper">
+				<button type="button" class="button">Continue <img src="images/rectangle-14.png" alt="arrow"></button>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="footer-wrapper container">
+			<ul class="foo-list">
+				<li>Privacy Policy</li>
+				<li>EULA</li>
+				<li>Endorsement Disclaimer and DMCA Policy</li>
+				<li>Contact Us</li>
+				<li> Uninstall</li>
+			</ul>
+			<p class="tos">All trademarks are the property of their respective owners. No affiliation or endorsement is intended or implied.</p>
+		</div>
+	</section>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/rectangle-14.png" alt="arrow"></button>
+	<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content" id="popup-content">
+		    <span class="close">&times;</span>
+		    <p>Thank you for downloading..</p>
+		  </div>
+
+		</div>
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		var modal_content = document.getElementById('popup-content');
+		var winNav = window.navigator;
+		var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+		var isFirefox = winNav.userAgent.indexOf('Firefox') > -1;
+		var isSafari = winNav.userAgent.indexOf('Safari') > -1;
+		var isChromium = window.chrome;
+		// Get the button that opens the modal
+		var btn = document.getElementById("cont-btn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+
+		
+		if (isChromium) {
+			modal.setAttribute('class',"modal modal-right");
+			modal_content.setAttribute('class',"modal-content modal-content-right");
+		}
+		
+		if(isIEedge) {
+			modal_content.setAttribute('class',"modal-content ie-content");
+		}
+
+		if (isFirefox) {
+			modal.setAttribute('class',"modal modal-left");
+			modal_content.setAttribute('class',"modal-content modal-content-left");
+		}
+
+		if (isSafari) {
+			modal.setAttribute('class',"modal modal-right");
+			modal_content.setAttribute('class',"modal-content modal-content-right");
+		}
+
+
+		// When the user scrolls down show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    document.getElementById("myBtn").style.display = "block";
+		  } else {
+		    document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+
+		// scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+
+	</script>
+</body>
+</html>
