@@ -138,7 +138,7 @@
 		  <!-- Modal content -->
 		  <div class="modal-content" id="popup-content">
 		    <span class="close">&times;</span>
-		    <p>Thank you for downloading..</p>
+		    <p class="message">Thank you for downloading..</p>
 		  </div>
 
 		</div>
@@ -154,6 +154,7 @@
 		var isChromium = window.chrome;
 		// Get the button that opens the modal
 		var btn = document.getElementById("cont-btn");
+		var message = document.getElementsByClassName("message");
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
@@ -178,6 +179,7 @@
 		
 		if (isChromium) {
 			
+			
 			modal.setAttribute('class',"modal modal-right");
 			modal_content.setAttribute('class',"modal-content modal-content-right");
 		}
@@ -199,6 +201,10 @@
 			
 			// modal.classList.remove("mystyle");
 			modal_content.setAttribute('class',"modal-content ie-content");
+		}
+
+		if (!isIEedge && !isChromium && !isSafari && !isFirefox) {
+			message[0].innerHTML = "Your browser doesn't support";
 		}
 
 
